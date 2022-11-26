@@ -14,7 +14,7 @@ const Header = () => {
               to="/"
               aria-label="iLearn"
               title="iLearn"
-              className="inline-flex items-center"
+              className="inline-flex items-center "
             >
               <span className="ml-2 text-2xl font-bold tracking-wide text-white">
                 <span>i</span>Learn
