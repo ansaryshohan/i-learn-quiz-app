@@ -6,11 +6,10 @@ import Question from '../Question/Question';
 const QuizPage = () => {
   const quizData = useLoaderData();
   const { data } = quizData;
-  const { id, logo, name, questions, total } = data;
+  const { name, questions,} = data;
   // console.log(data);
 
   const [results, setResults] = useState(false)
-  const [answers, setAnswers] = useState({});
   const [score, setScore] = useState(0);
   // console.log(answers);
   const handleResult = (chooosenAnswer, correctAnswer) => {

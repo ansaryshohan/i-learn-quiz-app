@@ -7,12 +7,6 @@ const Question = ( {questionData, number,handleResult }) => {
 
   const { id,correctAnswer, options,question } = questionData;
   const [showResult, setShowResult]= useState(false)
-  // console.log(showResult);
-  // let toggleResult= false;
-  // const showResult=()=>{
-  //         toggleResult= !toggleResult;
-  //         console.log(toggleResult)
-  //  }
   
 
   return (
