@@ -1,5 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import About from "../Components/About/About";
+import Banner from "../Components/Banner/Banner";
 import Blog from "../Components/Blog/Blog";
 import ErrorPage from "../Components/ErrorPage/ErrorPage";
 import QuizPage from "../Components/QuizPage/QuizPage";
@@ -16,7 +17,10 @@ export const router = createBrowserRouter([
       {
         path: '/',
         loader: () => fetch('https://openapi.programming-hero.com/api/quiz'),
-        element: <Topics></Topics>,
+        element:<>
+        <Banner></Banner>
+         <Topics></Topics>
+         </>,
       },
       {
         path: 'topics',

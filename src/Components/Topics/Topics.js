@@ -9,7 +9,7 @@ const Topics = () => {
 
   return (
     <div className='w-10/12 mx-auto mt-32'>
-       <div className='grid md:grid-cols-4 gap-5 mx-auto '>
+       <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-5 mx-auto '>
        {
           data.map(topic=> <SingleTopic
           key={topic.id}

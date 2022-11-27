@@ -1,5 +1,11 @@
 .background-image{
-  background-image: url('../../../public/background.jpg');
-  background-size: cover;
-  
+  background-color: rgba(41, 187, 207);
+ background-image: url('./background-medium.jpg');
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-blend-mode: multiply;
+ background-position: center center;
+ 
+ padding-top: 200px;
+ padding-bottom: 300px;
 }
