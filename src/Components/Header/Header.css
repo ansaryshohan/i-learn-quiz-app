@@ -1,7 +1,7 @@
 .navbar-comp{
   background-color: #028090;
   box-shadow: 3px 1px 3px 0 #7BFEE1;
-  text-shadow: 1px  0px 2px  #7BFEE1;
+  /* text-shadow: 1px  0px 2px  #7BFEE1; */
 }
 
 .active{

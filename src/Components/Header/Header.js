@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import './Header.css'
 
 const Header = () => {
@@ -10,17 +10,27 @@ const Header = () => {
       <div className="navbar-comp w-full">
         <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
           <div className="relative flex items-center justify-between">
-            <NavLink
+            <Link
               to="/"
               aria-label="iLearn"
               title="iLearn"
               className="inline-flex items-center "
             >
-              <span className="ml-2 text-2xl font-bold tracking-wide text-white">
-                <span>i</span>Learn
+              <span className="ml-2 text-3xl font-bold tracking-wide text-white">
+                <span className='text-[#ceb33a] shadow-[0 1px 5px 0 #ceb33a]'>i</span>Learn
               </span>
-            </NavLink>
+            </Link>
             <ul className="flex items-center hidden space-x-8 lg:flex">
+              <li>
+                <NavLink
+                  to="/"
+                  aria-label="Home"
+                  title="Home"
+                  className="font-medium text-xl tracking-wide text-white transition-colors duration-200 hover:text-teal-accent-400"
+                >
+                  Home
+                </NavLink>
+              </li>
               <li>
                 <NavLink
                   to="/topics"
@@ -89,16 +99,16 @@ const Header = () => {
                   <div className="p-5 navbar-comp border rounded shadow-sm">
                     <div className="flex items-center justify-between mb-4">
                       <div>
-                        <NavLink
+                        <Link
                           to="/"
                           aria-label="iLearn"
                           title="iLearn"
                           className="inline-flex items-center"
                         >
-                          <span className="ml-2 text-2xl font-bold tracking-wide text-white">
-                            <span>i</span>Learn
+                          <span className="ml-2 mb-3 text-4xl font-bold tracking-wide text-white">
+                            <span className='text-[#ceb33a] shadow-[0 1px 5px 0 #ceb33a]'>i</span>Learn
                           </span>
-                        </NavLink>
+                        </Link>
                       </div>
                       <div>
                         <button
@@ -118,6 +128,16 @@ const Header = () => {
                     </div>
                     <nav>
                       <ul className="space-y-4">
+                        <li>
+                          <NavLink
+                            to="/"
+                            aria-label="Home"
+                            title="Home"
+                            className="font-medium text-xl tracking-wide text-white transition-colors duration-200 hover:text-teal-accent-400"
+                          >
+                            Home
+                          </NavLink>
+                        </li>
                         <li>
                           <NavLink
                             to="/topics"
