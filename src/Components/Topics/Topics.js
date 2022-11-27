@@ -6,6 +6,7 @@ import SingleTopic from '../SingleTopic/SingleTopic';
 const Topics = () => {
   const loadedDatas= useLoaderData();
  const {data}=loadedDatas;
+//  console.log(data);
 
   return (
     <div className='w-10/12 mx-auto mt-32'>
