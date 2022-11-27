@@ -24,7 +24,13 @@ const QuizPage = () => {
       <h1 className='text-2xl font-medium text-center mb-6 mt-5'> Quiz for <span className='text-3xl font-semibold text-[#a5890c] underline'>{name}</span></h1>
       {
         results ?
-          <div className='text-center mt-20 text-5xl font-bold mb-52'> Score: <span className='text-6xl text-[#04736a]'>{score}</span></div>
+         <>
+          <div className='text-center mt-20 text-5xl font-bold mb-6'> Score: <span className='text-6xl text-[#04736a]'>{score}</span></div>
+          <div className='flex justify-center'>
+          <button className='border mb-52 px-5 py-2 text-xl font-medium rounded-xl bg-[#028090] text-[#EDF913] hover:bg-[#EDF913] hover:text-[#028090] hover:border-[#028090] hover:font-semibold ease-in transition'
+              onClick={() => setResults(!results)}>Start Again</button>
+          </div>
+         </>
           :
           <div className=''>{
             questions.map(question => <Question
